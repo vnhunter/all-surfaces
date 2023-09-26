@@ -1,39 +1,18 @@
-$(function () {
-  setTimeout(function () {
-    $(".netrix-navbar").addClass("show");
-    $(".text-signature").css("transition", "opacity 0.4s ease");
-    $(".text-signature").css("opacity", 1);
-  }, 1400);
+$(document).ready(function () {
+  console.log(123);
+  var $slider = $(".slider");
+  var $progressBar = $(".progress");
+  var $progressBarLabel = $(".slider__label");
 
-  setTimeout(function () {
-    $(".hero-banner h1").addClass("show");
-  }, 500);
+  $slider.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+    var calc = (nextSlide / (slick.slideCount - 1)) * 100;
 
-  $(".netrix-navbar-menu .nav-link").on("mouseover", function () {
-    let $this = $(this);
-    $this.siblings().css("width", $this.width());
+    $progressBar
+      .css("background-size", calc + "% 100%")
+      .attr("aria-valuenow", calc);
+
+    $progressBarLabel.text(calc + "% completed");
   });
 
-  $(".netrix-navbar-menu .nav-link").on("mouseout", function () {
-    let $this = $(this);
-    $this.siblings().css("width", 0);
-  });
-
-
-  $(window).scroll(function() {
-    var scrollPosition = $(this).scrollTop();
-    var windowHeight = $(window).height();
-
-    $('.product-wrapper').each(function() {
-      var elementOffset = $(this).offset().top;
-      var triggerPoint = elementOffset - windowHeight + (windowHeight / 6);
-
-      if (scrollPosition > triggerPoint ) {
-        var opacity = (scrollPosition - triggerPoint) / (elementOffset * (4/5) - triggerPoint);
-        $(this).css('opacity', opacity > 0.1 ? opacity : 0.1);
-      } else {
-        $(this).css('opacity', '0.1');
-      }
-    });
-  });
+  // $slider.slick({ slidesToShow: 3, slidesToScroll: 1, speed: 400 });
 });

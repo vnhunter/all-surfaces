@@ -1,4 +1,41 @@
+html,
 body {
+  font-family: $font-family;
+  font-size: 1rem;
   position: relative;
-  @include fontCustom(normal, normal, 14px, 12px);
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-family: $font-verlag;
+}
+
+h2 {
+  font-size: 1.875rem/* 30px */;
+  line-height: 2.25rem/* 36px */;
+  font-family: $font-verlag;
+}
+
+h3 {
+  font-size: 1.5rem/* 24px */;
+  line-height: 2rem/* 32px */;
+  font-family: $font-verlag;
+}
+
+h4 {
+  font-size: 1.25rem/* 20px */;
+  line-height: 1.75rem/* 28px */;
+  font-family: $font-verlag;
+}
+
+h6 {
+  font-size: 1.125rem/* 18px */;
+  line-height: 1.75rem/* 28px */;
+  font-family: $font-verlag;
+}
+
+p {
+  font-size: 1rem/* 16px */;
+  line-height: 1.5rem/* 24px */;
 }

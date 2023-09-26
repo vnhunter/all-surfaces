@@ -1,9 +1,111 @@
 {% extends "../layouts/_base" %}
 
 {% block content %}
-	<main class="flex w-screen h-screen items-center justify-center">
-		<h1>
-			All Surfaces
-		</h1>
-	</main>
+	<section class="w-screen">
+		<div class="w-full h-[522px] relative bg-[url('./assets/img/banner/banner-background.png')] bg-cover bg-right bg-no-repeat">
+			<div class="absolute top-[9rem] flex">
+				<img src="./assets/img/banner/banner-default-1.png" alt="" class="-translate-x-32" style="-webkit-clip-path:polygon(0 0, 70% 0, 100% 100%, 0% 100%);clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);">
+				<div class="-translate-x-32">
+					<img src="./assets/img/logo/cartwright-logo.png" class="md:-ms-3" alt="">
+					<p class="text-white font-normal mt-5 text-lg">
+						Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="md:mt-56 flex justify-center">
+		<div class="container">
+			<div class="grid grid-cols-12">
+				<div class="col-span-5">
+					<span class="text-lg text-[#7B9E16] uppercase">About cartwright</span>
+					<h1>
+						Aenean lacinia bibendum nulla sed consectetur
+					</h1>
+					<p class="mt-5 text-lg">
+						Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+					</p>
+				</div>
+				<div class="grid grid-cols-2 col-start-7 col-span-6 gap-7">
+					<div class="flex flex-col justify-center items-center text-center">
+						<img src="./assets/img/icon/people.svg" class="w-auto h-[110px]" alt="">
+						<h2>Nulla vitae elit libero, a pharetra augue</h2>
+						<p class="text-lg mt-4">
+							Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+						</p>
+					</div>
+					<div class="flex flex-col justify-center items-center text-center">
+						<img src="./assets/img/icon/improve.svg" class="w-auto h-[110px]" alt="">
+						<h2>Donec id elit non mi porta gravida ateg</h2>
+						<p class="text-lg mt-4">
+							Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="md:mt-56 flex justify-center">
+		<div class="container px-16 py-36 bg-gray-200">
+			<div class="grid grid-cols-12">
+				<div class="col-span-4">
+					<span class="text-lg text-[#7B9E16] uppercase">Provided Services</span>
+					<h1 class="mt-5">
+						Donec id elit non mi porta gravida.
+					</h1>
+					<p class="mt-5 text-lg">
+						Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+					</p>
+				</div>
+				<div class="">
+					<div class="content">
+						<div class="slider">
+							<div>
+								<div class="image">
+									<img src="https://kenwheeler.github.io/slick/img/lazyfonz2.png" alt="">
+								</div>
+								<!-- end image -->
+							</div>
+							<div>
+								<div class="image">
+									<img src="https://kenwheeler.github.io/slick/img/lazyfonz4.png" alt="">
+								</div>
+								<!-- end image -->
+							</div>
+							<div>
+								<div class="image">
+									<img src="https://kenwheeler.github.io/slick/img/lazyfonz3.png" alt="">
+								</div>
+								<!-- end image -->
+							</div>
+							<div>
+								<div class="image">
+									<img src="https://kenwheeler.github.io/slick/img/lazyfonz2.png" alt="">
+								</div>
+								<!-- end image -->
+							</div>
+							<div>
+								<div class="image">
+									<img src="https://kenwheeler.github.io/slick/img/lazyfonz4.png" alt="">
+								</div>
+								<!-- end image -->
+							</div>
+							<div>
+								<div class="image">
+									<img src="https://kenwheeler.github.io/slick/img/lazyfonz3.png" alt="">
+								</div>
+								<!-- end image -->
+							</div>
+						</div>
+						<!-- end slider -->
+						<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+							<span class="slider__label sr-only"></div>
+						</span>
+					</div>
+					<!-- end content -->
+				</div>
+			</div>
+		</div>
+	</section>
 {% endblock %}

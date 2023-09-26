@@ -1,6 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+  font-family: "Verlag";
+  src: url("/assets/fonts/verlag/Verlag-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
-$font-family: "Roboto", sans-serif;
+@font-face {
+  font-family: "Verlag";
+  src: url("/assets/fonts/verlag/Verlag-Black.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verlag";
+  src: url("/assets/fonts/verlag/Verlag-BlackItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verlag";
+  src: url("/assets/fonts/verlag/Verlag-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Verlag";
+  src: url("/assets/fonts/verlag/Verlag-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Verlag";
+  src: url("/assets/fonts/verlag/Verlag-XLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+  font-family: "TTNorms";
+  src: url("/assets/fonts/tt-norms/TTNorms-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTNorms";
+  src: url("/assets/fonts/tt-norms/TTNorms-Medium.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTNorms";
+  src: url("/assets/fonts/tt-norms/TTNorms-MediumItalic.otf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TTNorms";
+  src: url("/assets/fonts/tt-norms/TTNorms-Bold.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTNorms";
+  src: url("/assets/fonts/tt-norms/TTNorms-BoldItalic.otf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TTNorms";
+  src: url("/assets/fonts/tt-norms/TTNorms-Light.otf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTNorms";
+  src: url("/assets/fonts/tt-norms/TTNorms-LightItalic.otf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TTNorms";
+  src: url("/assets/fonts/tt-norms/TTNorms-ExtraLight.otf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTNorms";
+  src: url("/assets/fonts/tt-norms/TTNorms-ExtraLightItalic.otf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+$font-family: "TTNorms", sans-serif;
+$font-verlag: "Verlag", sans-serif;
 
 @mixin fontCustom($font-style, $font-weight, $line-height, $font-size) {
   font-family: $font-family;
@@ -8,31 +115,4 @@ $font-family: "Roboto", sans-serif;
   font-weight: $font-weight;
   line-height: $line-height;
   font-size: $font-size;
-}
-
-html,
-body {
-  font-family: $font-family;
-}
-
-h1 {
-  font-size: 24px;
-  line-height: 28px;
-  font-style: normal;
-  font-weight: normal;
-}
-
-h2 {
-  font-size: 14px;
-  line-height: 16px;
-  font-style: normal;
-  font-weight: normal;
-}
-
-h3 {
-  font-size: 12px;
-  line-height: 14px;
-  font-style: normal;
-  font-weight: normal;
-  text-transform: uppercase;
 }
