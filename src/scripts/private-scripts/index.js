@@ -14,5 +14,5 @@ $(document).ready(function () {
     $progressBarLabel.text(calc + "% completed");
   });
 
-  // $slider.slick({ slidesToShow: 3, slidesToScroll: 1, speed: 400 });
+  $slider.slick({ slidesToShow: 3, slidesToScroll: 1, speed: 400 });
 });
