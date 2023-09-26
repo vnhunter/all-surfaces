@@ -1,0 +1,14 @@
+$primary-color: #e63946;
+$secondary-color: #1d3557;
+$white-color: #ffffff;
+$black-color: #000;
+$dark-color: #2c2f35;
+$light-color: #d2cfcf;
+$primary-hover-color: #f58c3c;
+
+.navbar {
+    --bs-navbar-active-color: $white-color;
+    --bs-navbar-color: $white-color;
+    --bs-navbar-hover-color: $white-color;
+    --bs-navbar-disabled-color: rgb(255 255 255 / 30%);
+}

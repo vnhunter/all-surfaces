@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$font-family: "Roboto", sans-serif;
+
+@mixin fontCustom($font-style, $font-weight, $line-height, $font-size) {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  font-size: $font-size;
+}
+
+html,
+body {
+  font-family: $font-family;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 12px;
+  line-height: 14px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+}
