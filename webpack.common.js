@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const glob = require("glob");
 const fs = require("fs");
 const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 function resolve(dir) {
   return path.join(__dirname, ".", dir);
@@ -48,7 +49,7 @@ function generateJavascript(templateDir) {
 const javascriptEntry = generateJavascript("./src/scripts/main");
 
 // --------------------------------------------- run command
-module.exports = {
+module.exports =  {
   mode: "development",
   entry: javascriptEntry,
   devtool: "eval",
@@ -71,7 +72,8 @@ module.exports = {
         test: /\.(scss|css)?$/,
         include: path.resolve(__dirname, 'src'),
         use: [
-          "style-loader",
+          MiniCssExtractPlugin.loader,
+          // "style-loader",
           {
             loader: "css-loader",
             options: {
@@ -129,6 +131,9 @@ module.exports = {
       _: "underscore",
       'window.jQuery': 'jquery',
       Popper: ['popper.js', 'default'],
+    }),
+    new MiniCssExtractPlugin({
+      filename: "./[name].bundle.css"
     }),
     // new CopyWebpackPlugin({
     //   patterns: [

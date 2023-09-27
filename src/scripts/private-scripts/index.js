@@ -16,7 +16,6 @@ $(document).ready(function () {
   });
 
   $serviceSliderButton.on("click", function () {
-    console.log(123234234);
     $slider.slick("slickNext");
   });
 
@@ -27,7 +26,7 @@ $(document).ready(function () {
     arrows: false,
     responsive: [
       {
-        breakpoint: 768, // Adjust this breakpoint as needed
+        breakpoint: 1280, // Adjust this breakpoint as needed
         settings: {
           slidesToShow: 1,
         },
