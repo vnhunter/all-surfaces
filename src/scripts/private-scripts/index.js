@@ -29,16 +29,21 @@ $(document).ready(function () {
       {
         breakpoint: 768, // Adjust this breakpoint as needed
         settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480, // Adjust this breakpoint as needed
-        settings: {
           slidesToShow: 1,
-          centerMode: true
         },
-      },
+      }
     ],
   });
 });
+
+var navbarCollapse = function () {
+  if ($(".all-surfaces-header").offset().top > 50) {
+    $(".all-surfaces-header").addClass("all-surfaces-header--shrink");
+  } else {
+    $(".all-surfaces-header").removeClass("all-surfaces-header--shrink");
+  }
+};
+// Collapse now if page is not at top
+navbarCollapse();
+// Collapse the navbar when page is scrolled
+$(window).scroll(navbarCollapse);

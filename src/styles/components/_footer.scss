@@ -1,4 +1,9 @@
 .all-surfaces-footer {
     margin-top: -6rem;
     clip-path: polygon(45% 25%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+
+    @media only screen and (max-width: 768px) {
+        margin-top: 0;
+        clip-path: none;
+    }
 }

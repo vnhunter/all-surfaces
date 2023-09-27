@@ -26,4 +26,18 @@
 
 .slick-list {
     padding: 0 10% 0 0 !important;
+
+    @media only screen and (max-width: 768px) {
+        padding: unset!important;
+    }
+}
+
+.banner-image__trapezoid {
+    -webkit-clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+
+    @media only screen and (max-width: 1280px) {
+        -webkit-clip-path: none;
+        clip-path: none;
+    }
 }
