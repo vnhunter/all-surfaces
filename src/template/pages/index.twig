@@ -19,7 +19,7 @@
 			<div class="grid grid-cols-12">
 				<div class="col-span-5">
 					<span class="text-lg text-[#7B9E16] uppercase">About cartwright</span>
-					<h1>
+					<h1 class="mt-5">
 						Aenean lacinia bibendum nulla sed consectetur
 					</h1>
 					<p class="mt-5 text-lg">
@@ -45,65 +45,41 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="md:mt-56 flex justify-center">
 		<div class="container px-16 py-36 bg-gray-200">
 			<div class="grid grid-cols-12">
-				<div class="col-span-4">
-					<span class="text-lg text-[#7B9E16] uppercase">Provided Services</span>
-					<h1 class="mt-5">
-						Donec id elit non mi porta gravida.
-					</h1>
-					<p class="mt-5 text-lg">
-						Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-					</p>
-				</div>
-				<div class="">
-					<div class="content">
-						<div class="slider">
-							<div>
-								<div class="image">
-									<img src="https://kenwheeler.github.io/slick/img/lazyfonz2.png" alt="">
-								</div>
-								<!-- end image -->
-							</div>
-							<div>
-								<div class="image">
-									<img src="https://kenwheeler.github.io/slick/img/lazyfonz4.png" alt="">
-								</div>
-								<!-- end image -->
-							</div>
-							<div>
-								<div class="image">
-									<img src="https://kenwheeler.github.io/slick/img/lazyfonz3.png" alt="">
-								</div>
-								<!-- end image -->
-							</div>
-							<div>
-								<div class="image">
-									<img src="https://kenwheeler.github.io/slick/img/lazyfonz2.png" alt="">
-								</div>
-								<!-- end image -->
-							</div>
-							<div>
-								<div class="image">
-									<img src="https://kenwheeler.github.io/slick/img/lazyfonz4.png" alt="">
-								</div>
-								<!-- end image -->
-							</div>
-							<div>
-								<div class="image">
-									<img src="https://kenwheeler.github.io/slick/img/lazyfonz3.png" alt="">
-								</div>
-								<!-- end image -->
-							</div>
-						</div>
-						<!-- end slider -->
-						<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+				<div class="col-span-12 md:col-span-4 flex flex-col justify-between">
+					<div class="">
+						<span class="text-lg text-[#7B9E16] uppercase">Provided Services</span>
+						<h1 class="mt-5">
+							Donec id elit non mi porta gravida.
+						</h1>
+						<p class="mt-5 text-lg">
+							Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+						</p>
+					</div>
+					<div class="flex items-center">
+						<div class="slider-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
 							<span class="slider__label sr-only"></div>
 						</span>
+						<button class="service-slider__next-button px-5">NEXT</button>
 					</div>
-					<!-- end content -->
+				</div>
+				<div class="col-span-12 md:col-start-6 md:col-span-7">
+					<div class="services-slider">
+						{% for i in 0..10 %}
+							<div class="me-10 px-8 pt-8 relative">
+								<div class="w-full h-1/2 bg-white absolute top-0 left-0 -z-10"></div>
+								<img src="./assets/img/icon/np_tile.svg" alt="">
+								<h3 class="mt-3">
+									Bibendum Pellesque
+								</h3>
+								<div class="image mt-5">
+									<img src="./assets/img/services/service-1.png" alt="">
+								</div>
+							</div>
+						{% endfor %}
+					</div>
 				</div>
 			</div>
 		</div>
