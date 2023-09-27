@@ -1,9 +1,94 @@
 {% extends "../layouts/_base" %}
 
 {% block content %}
-	<main class="flex w-screen h-screen items-center justify-center">
-		<h1>
-			All Surfaces
-		</h1>
-	</main>
+	<section class="w-screen">
+		<div class="w-full min-h-[522px] relative bg-[url('./assets/img/banner/banner-background.png')] bg-cover bg-right bg-no-repeat">
+			<div class="static xl:absolute pt-32 pb-10 xl:pt-0 top-[9rem] flex flex-col xl:flex-row w-full xl:w-auto">
+				<img src="./assets/img/banner/banner-default-1.png" alt="" class="w-full -translate-x-0  xl:w-auto xl:-translate-x-32 banner-image__trapezoid">
+				<div class="-translate-x-0 xl:-translate-x-32 px-10">
+					<img src="./assets/img/logo/cartwright-logo.png" class="md:-ms-3" alt="">
+					<p class="text-white font-normal mt-5 text-lg">
+						Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo
+					</p>
+				</div>
+			</div>
+			<div class="absolute -z-10 -bottom-3 xl:-bottom-10 right-0">
+				<img src="./assets/img/icon/slash-pattern.svg" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="mt-20 mb-20 md:mb-0 md:mt-56 flex justify-center">
+		<div class="container px-8 md:px-0">
+			<div class="grid grid-cols-12">
+				<div class="col-span-12 md:col-span-5">
+					<span class="text-lg text-[#7B9E16] uppercase">About cartwright</span>
+					<h1 class="mt-5">
+						Aenean lacinia bibendum nulla sed consectetur
+					</h1>
+					<p class="mt-5 mb-10 text-lg">
+						Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+					</p>
+					<button class="py-3 px-10 relative flex items-center gap-5 bg-no-repeat bg-[url(./assets/img/icon/button-trapezoid.svg)] focus:outline-none active:bg-transparent">
+						VISIT CARTWRIGHT SITE
+						<img src="./assets/img/icon/arrow-right-up.svg" alt="">
+					</button>
+				</div>
+				<div class="grid grid-cols-2 col-span-12 mt-20 md:mt-0 md:col-start-7 md:col-span-6 content-start">
+					<div class="flex flex-col justify-center items-center text-center pe-7 border-r-[1px]">
+						<img src="./assets/img/icon/people.svg" class="w-auto h-[110px]" alt="">
+						<h2>Nulla vitae elit libero, a pharetra augue</h2>
+						<p class="text-lg mt-4">
+							Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+						</p>
+					</div>
+					<div class="flex flex-col justify-center items-center text-center ps-7">
+						<img src="./assets/img/icon/improve.svg" class="w-auto h-[110px]" alt="">
+						<h2>Donec id elit non mi porta gravida ateg</h2>
+						<p class="text-lg mt-4">
+							Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="md:mt-56 flex justify-center">
+		<div class="container px-16 py-36 bg-gray-200">
+			<div class="grid grid-cols-12">
+				<div class="col-span-12 md:col-span-4 flex flex-col justify-between">
+					<div class=" bord">
+						<span class="text-lg text-[#7B9E16] uppercase">Provided Services</span>
+						<h1 class="mt-5">
+							Donec id elit non mi porta gravida.
+						</h1>
+						<p class="mt-5 text-lg">
+							Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+						</p>
+					</div>
+					<div class="flex items-center mt-5 md:mt-0">
+						<div class="slider-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+							<span class="slider__label sr-only"></div>
+						</span>
+						<button class="service-slider__next-button px-5">NEXT</button>
+					</div>
+				</div>
+				<div class="col-span-12 mt-14 md:col-start-6 md:col-span-7 md:mt-0">
+					<div class="services-slider">
+						{% for i in 0..10 %}
+							<div class="me-0 md:me-10 px-8 pt-8 relative">
+								<div class="w-full h-1/2 bg-white absolute top-0 left-0 -z-10"></div>
+								<img src="./assets/img/icon/np_tile.svg" alt="">
+								<h3 class="mt-3">
+									Bibendum Pellesque
+								</h3>
+								<div class="image flex justify-center mt-5">
+									<img src="./assets/img/services/service-1.png" alt="">
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 {% endblock %}
