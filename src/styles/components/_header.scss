@@ -1,9 +1,19 @@
 .all-surfaces-header {
     transition: all ease-in 300ms;
+
+    @media (min-width: 1280px) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
 }
 
 .all-surfaces-header--shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: #2C6099;
+
+    @media (min-width: 1280px) {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 }
